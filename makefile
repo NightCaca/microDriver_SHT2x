@@ -1,26 +1,10 @@
-#
-#PXT Microbit Makefile 
-#
+all: deploy
 
-.PHONY: all install setup clean
-all: 
-	pxt install
+build:
 	pxt build
 
-install: 
+deploy:
 	pxt deploy
 
 test:
 	pxt test
-	
-clean:
-	pxt clean
-
-setup:
-	pip3 install --upgrade cryptography
-	pxt init
-	pxt add cpp
-
-env:
-	pxt target microbit
-	mkdir project && cd project 

@@ -6,13 +6,13 @@
 #include <stddef.h>
 #include "pxt.h"
 
-#define DEBUG 1
+#define DEBUG 0
 
 /* DEBUG PRINT */
 #ifdef DEBUG
 #undef printf
-#define dprint(msg) uBit.serial.printf("DEBUG: %d: %s: %s\r\n",__LINE__,__func__,msg)
-#define dprintf(...) uBit.serial.printf("DEBUG: " __VA_ARGS__)
+#define dprint(msg)   /*uBit.serial.printf("DEBUG: %d: %s: %s\r\n",__LINE__,__func__,msg)*/
+#define dprintf(...)  /*uBit.serial.printf("DEBUG: " __VA_ARGS__)*/
 #else
 #define dprint(msg)
 #define dprintf(...)
