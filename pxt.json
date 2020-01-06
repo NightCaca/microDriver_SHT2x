@@ -1,6 +1,6 @@
 {
     "name": "HTU21D or SHT21 or SHT20",
-    "version": "0.0.0",
+    "version": "0.0.7",
     "description": "HTU21D IIC ADDR 0x80",
     "dependencies": {
         "core": "*",
